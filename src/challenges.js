@@ -53,7 +53,7 @@ function catAndMouse(mouse,cat1,cat2) {
   }
   return result
 }
-console.log(catAndMouse(0,6,6))
+
 
 // Desafio 8 ver erro
 function fizzBuzz(array){
