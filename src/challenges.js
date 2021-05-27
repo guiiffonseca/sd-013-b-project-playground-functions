@@ -44,9 +44,27 @@ function catAndMouse() {
   // seu código aqui
 }
 
-// Desafio 8
+// Desafio 8 ver erro
 function fizzBuzz(array){
+let resultString=[]
+for(let index=0; index<array.length; index+=1){
+  if(array[index]%3===0 && array[index]%5===0){
+  resultString.push('fizzBuzz');
 }
+  else if(array[index]%3===0){
+  resultString.push('fizz');
+}
+  else if(array[index]%5===0){
+  resultString.push('buzz');
+}
+  else{
+  resultString.push('bug!');
+}
+}
+return resultString;
+}
+console.log(fizzBuzz( [2, 15, 7, 9, 45] ))
+
 
 //Desafio 9
 function encode(){
