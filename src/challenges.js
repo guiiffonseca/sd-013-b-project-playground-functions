@@ -86,7 +86,7 @@ function encode(string) {
   encodedPhrase = encodedPhrase.replace(/u/g , '5');
   return encodedPhrase;
 }
-console.log(encode('hi,there'))
+
 function decode(string) {
   let decodedPhrase = string;
   decodedPhrase = decodedPhrase.replace(/1/g , 'a');
