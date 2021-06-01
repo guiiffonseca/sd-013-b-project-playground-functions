@@ -21,7 +21,7 @@ function triangleCheck(LineA, LineB, LineC) {
   let check = Boolean;
   if (LineA > (LineB + LineC) || LineB > (LineA + LineC) || LineC > (LineA + LineB)) {
     check = false;
-  } else if (LineA < (LineB - LineC) || LineB < (LineA - LineC) || LineC < (LineA - LineB)){
+  } else if (LineA < (LineB - LineC) || LineB < (LineA - LineC) || LineC < (LineA - LineB)) {
     check = false;
   } else {
     check = true;
