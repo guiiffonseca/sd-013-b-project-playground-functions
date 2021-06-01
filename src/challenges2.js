@@ -19,9 +19,11 @@ function generatePhoneNumber() {
 // Desafio 12
 function triangleCheck(LineA, LineB, LineC) {
   let check = Boolean;
-  if (LineA > (LineB + LineC) || LineB > (LineA + LineC) || LineC > (LineA + LineB) && LineA < (LineB - LineC) || LineB < (LineA - LineC) || LineC < (LineA - LineB)) {
+  if (LineA > (LineB + LineC) || LineB > (LineA + LineC) || LineC > (LineA + LineB)) {
     check = false;
-  } else if (LineA < (LineB + LineC) && LineA > (LineB - LineC) || LineB < ( LineA + LineC) && LineB > (LineA - LineC) || LineC < (LineA + LineC) && LineC > (LineA - LineC)) {
+  } else if (LineA < (LineB - LineC) || LineB < (LineA - LineC) || LineC < (LineA - LineB)){
+    check = false;
+  } else {
     check = true;
   }
   return check;
